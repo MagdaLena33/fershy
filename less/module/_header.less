@@ -1,0 +1,102 @@
+.main-head {
+	height: 635px;
+.log {
+	& {
+		position: relative;
+		margin: 27px 0px 0px 55px;
+		float: left;
+		font-size: 25px;	
+	}
+
+	a {
+		letter-spacing: 1px;
+		color: @main-color;
+		font-family: @font-family__primary;
+	}
+
+	&:hover {
+		color: @main-color;
+	}
+}
+
+.sf-menu {
+	padding: 0;
+	margin: 20px 5px 0px 365px;
+	float: left;
+	font-family: @font-family__primary;
+	position: relative;
+	li {
+		display: inline-block;
+		list-style-type: none;		
+		padding-right: 15px;
+		margin: 3px;
+		text-align: center;
+	}
+	
+	a {
+		color: @main-color;
+		letter-spacing: 1px;
+		&:hover {
+			color: @main-color;
+		}
+	}
+}
+
+.head-bg {
+	& {
+		position: absolute;
+		height: 635px;
+		background-size: cover;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;	
+	}
+	
+	&::before {
+		position: absolute;
+		content: '';
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: @accent-color;
+		opacity: .3;
+	}
+}
+
+
+.tagline {
+	& {
+		position: relative;
+		margin-top: 280px;
+		line-height: 0.9;	
+	}
+	
+	.name-tag {
+			font-size: 78px;
+	}
+
+	.tag {
+		font-size: 22px;
+	}
+
+	p {
+	margin: 0;
+	color: @main-color;
+	text-align: center;
+	}
+}
+}
+//ot
+@media only screen and (min-width: @screen_m) {
+		.main-head { 
+			display: none;
+		}	
+}
+
+@media only screen and (min-width: @screen_m) {
+		.main-head { 
+			display: none;
+		}	
+}

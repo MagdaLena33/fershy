@@ -1,0 +1,142 @@
+@main-color: #ffffff;
+@accent-color: #00a1eb;
+@color: #a0a0a0;
+
+.MyriadPro {
+	font-family: "MyriadProRegular", sans-serif;
+}
+
+body {
+	font-size: 14px;
+	font-family: @font-family__primary;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.5;
+	overflow-x: hidden;
+	background-color: @main-color;
+}
+
+
+.service-item {
+	top: 140px;
+}
+
+.service-item-about{
+		top: 0;
+		h1 {
+			margin: 0px;
+			color: @accent-color;
+		}
+	}
+
+.line {
+	margin-left: 0;
+	width: 100px;
+	color: @color;
+}
+
+.about-us {
+	color: @color;
+}
+
+.about-number {
+	color: @accent-color;
+	font-size: 22px;
+}
+
+.service-item-image {
+	position: relative;
+	background-size: cover;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	&::before {
+		position: absolute;
+		content: '';
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: @accent-color;
+		opacity: .3;
+	}
+}
+
+.pic {
+	& {
+		position: relative;
+		padding: 295px 0px 10px 400px ;	
+	}
+	
+	p {
+		font-size: 22px;
+		color: @main-color;
+		line-height: 0.9;
+	}
+}
+
+.carousel {
+	position: relative;
+	margin-top: 250px ;
+	.carousel-bg {
+	position: absolute;
+	background-size: cover;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: .2;
+	height: 730px;
+}
+}
+
+.about-carousel {
+	padding-top: 45px;
+}
+
+.carousel-name p {
+	color: @accent-color;
+	font-size: 34px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.carousel-text {
+	width: 630px;
+	align: center;
+	margin: 0 auto;
+	p {
+		color: @color;
+		font-family: @font-family__primary;
+		text-align: center;
+	}
+}
+
+.carousel-slid {
+	margin-top: 50px;
+}
+
+.carousel-item-image {
+	height: 265px;
+	position: relative;
+	background-size: cover;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	&::before {
+		position: absolute;
+		content: '';
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: @accent-color;
+		opacity: .3;
+	}
+}
+
+.button-carousel {
+	margin-top: 57px;
+}
